@@ -1,7 +1,5 @@
 # 🧶 Cat's Cradle — Interactive String Art
 
-[Live Demo](https://afnan-nex.github.io/cats-cradle/index.html)
-
 **Cat's Cradle** is an innovative, interactive web application that brings the classic string game into the digital realm. Using real-time hand tracking, it allows you to weave and manipulate virtual strings through simple hand gestures, creating mesmerizing string art directly in your browser.
 
 ## 🌐 Live Demo
