@@ -59,7 +59,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:#000;font-family:'Or
 
 <!-- HUD -->
 <div id="ui">
-  <div id="title">Cat's Cradle</div>
+  <div id="title">Cat's Cradle by AFNAN</div>
   <div id="status-bar">
     <span id="status">Initializing…</span>
     <span><span id="fps">-- FPS</span><span id="quality-badge">--</span></span>
@@ -427,7 +427,7 @@ function detectTouches(hands) {
         if ((wasActive && d < CFG.touchExitDist) || (!wasActive && d < CFG.touchEnterDist)) {
           newTouches.add(key);
           touchPoints.push({
-            x: (a.x + b.x) * 0.5 * state.width,
+            x: (1 - (a.x + b.x) * 0.5) * state.width,
             y: (a.y + b.y) * 0.5 * state.height,
             color: HAND_COLORS[h] || PAL.cyan,
           });
@@ -449,7 +449,7 @@ function detectTouches(hands) {
         if ((wasActive && d < CFG.touchExitDist * 1.3) || (!wasActive && d < CFG.touchEnterDist * 1.3)) {
           newTouches.add(key);
           touchPoints.push({
-            x: (a.x + b.x) * 0.5 * state.width,
+            x: (1 - (a.x + b.x) * 0.5) * state.width,
             y: (a.y + b.y) * 0.5 * state.height,
             color: PAL.green,
           });
