@@ -128,7 +128,7 @@ const CFG = {
   fpsLowThreshold: 30,
 
   // Visual
-  darkOverlayAlpha: 0.35,
+  darkOverlayAlpha: 0.0,
   landmarkDotRadius: 4,
   fingertipDotRadius: 6,
 };
@@ -275,7 +275,7 @@ function buildVignette(w, h) {
   const oc = off.getContext("2d");
   const g = oc.createRadialGradient(w / 2, h / 2, Math.min(w, h) * 0.25, w / 2, h / 2, Math.max(w, h) * 0.75);
   g.addColorStop(0, "rgba(0,0,0,0)");
-  g.addColorStop(1, "rgba(0,0,10,0.55)");
+  g.addColorStop(1, "rgba(0,0,10,0.15)");
   oc.fillStyle = g;
   oc.fillRect(0, 0, w, h);
   vignetteSprite = off;
